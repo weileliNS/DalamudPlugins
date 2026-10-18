@@ -10,18 +10,20 @@ https://raw.githubusercontent.com/weileliNS/DalamudPlugins/main/repo.json
 
 ## 更新
 
-先在源码仓发布版本，再在本仓 Actions 手动运行 `Update plugin index`，输入标签，例如 `v1.8.3.4`。也可本地运行：
+先在源码仓发布版本，再在本仓 Actions 手动运行 `Update plugin index`，输入标签，例如 `v1.8.3.6`。也可本地运行：
 
 ```powershell
-./Update-Index.ps1 -Tag v1.8.3.4
+./Update-Index.ps1 -Tag v1.8.3.6
 ```
 
 脚本下载已发布清单，检查 InternalName、版本及 API，再生成 `repo.json`。版本和 ZIP 均固定到相应标签，旧版本可以回退。
 
 ## 从官方源迁移
 
-Accountant CN 保留 `Accountant` 内部名称。请先备份 Accountant 配置与数据，卸载官方源版本，再通过本自定义源安装；不能靠增加仓库 URL 强行覆盖官方源已安装的插件。
+Accountant CN 从 1.8.3.6 起使用独立内部名称 `AccountantCN`。旧自定义版本使用 `Accountant`，会被国服框架按官方清单过滤；卸载和重启均不能解除这种同名过滤。
 
-卸载后若显示“等待删除”或仍只看到官方版本，请先完全退出并重新启动游戏，让旧安装删除生效，再刷新插件仓库并选择 **Accountant CN 1.8.3.5**（或本源更新的版本）。不要在等待删除期间重新安装官方版；旧版的服务器校验会拒绝现有国服作物记录。
+保留旧配置，停用或卸载官方 Accountant，刷新后安装 Accountant CN 1.8.3.6 或更新版本。首次启动会把旧配置及计时数据复制到独立 CN 目录并迁移 JSON 类型引用，保留原始文件，不覆盖已有 CN 数据。两个版本不要同时启用。
+
+发布附件仍沿用 `Accountant.json` 文件名，文件中的 `InternalName` 及 ZIP 内的 DLL/清单均为 `AccountantCN`。
 
 本仓仅包含分发索引与工作流；插件代码和许可在源码仓。不会存放个人游戏配置、角色记录或日志。

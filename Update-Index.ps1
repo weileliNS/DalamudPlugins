@@ -2,7 +2,7 @@ param([Parameter(Mandatory)][ValidatePattern('^v\d+\.\d+\.\d+\.\d+$')][string]$T
 $ErrorActionPreference = 'Stop'
 $base = "https://github.com/weileliNS/Accountant/releases/download/$Tag"
 $manifest = Invoke-RestMethod "$base/Accountant.json"
-if ($manifest.InternalName -ne 'Accountant' -or "v$($manifest.AssemblyVersion)" -ne $Tag -or $manifest.DalamudApiLevel -ne 15) {
+if ($manifest.InternalName -ne 'AccountantCN' -or "v$($manifest.AssemblyVersion)" -ne $Tag -or $manifest.DalamudApiLevel -ne 15) {
     throw 'Unexpected plugin identity, version, or API level'
 }
 foreach ($key in @('DownloadLinkInstall','DownloadLinkUpdate','DownloadLinkTesting')) {
