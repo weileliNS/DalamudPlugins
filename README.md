@@ -22,4 +22,6 @@ https://raw.githubusercontent.com/weileliNS/DalamudPlugins/main/repo.json
 
 Accountant CN 保留 `Accountant` 内部名称。请先备份 Accountant 配置与数据，卸载官方源版本，再通过本自定义源安装；不能靠增加仓库 URL 强行覆盖官方源已安装的插件。
 
+卸载后若显示“等待删除”或仍只看到官方版本，请先完全退出并重新启动游戏，让旧安装删除生效，再刷新插件仓库并选择 **Accountant CN 1.8.3.5**（或本源更新的版本）。不要在等待删除期间重新安装官方版；旧版的服务器校验会拒绝现有国服作物记录。
+
 本仓仅包含分发索引与工作流；插件代码和许可在源码仓。不会存放个人游戏配置、角色记录或日志。
