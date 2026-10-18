@@ -8,6 +8,8 @@ https://raw.githubusercontent.com/weileliNS/DalamudPlugins/main/repo.json
 
 当前维护 [Accountant CN](https://github.com/weileliNS/Accountant)。索引只在 release 资产确实发布后更新，不发布占位或失效下载链接。
 
+如果当前游戏进程已经加载过 1.8.3.5 旧索引，普通刷新可能命中框架的三小时内存缓存。可以把仓库地址改为 `https://raw.githubusercontent.com/weileliNS/DalamudPlugins/main/repo.json?channel=cn`，保存后刷新列表。此地址仍随仓库发布更新。
+
 ## 更新
 
 先在源码仓发布版本，再在本仓 Actions 手动运行 `Update plugin index`，输入标签，例如 `v1.8.3.6`。也可本地运行：
