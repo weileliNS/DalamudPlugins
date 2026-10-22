@@ -32,5 +32,34 @@
     "DownloadLinkTesting": "https://github.com/weileliNS/Accountant/releases/download/v1.8.3.6/latest.zip",
     "LastUpdate": 1792354713,
     "IconUrl": "https://raw.githubusercontent.com/weileliNS/Accountant/main/images/icon.png"
+  },
+  {
+    "Author": "weileliNS",
+    "Name": "Language Bridge",
+    "InternalName": "LanguageBridge",
+    "AssemblyVersion": "0.2.0.0",
+    "Punchline": "跨客户端官方配音与口型 / Cross-client voices and lip sync",
+    "Description": "国服用官方英文，国际服用官方中文：配音与口型随开关切换，界面保留原语言。需要本地生成的 Penumbra 资源包。/ Official English on CN, official Chinese on Global; retain the interface language. Requires locally generated Penumbra resources. /languagebridge",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "SupportsProfiles": true,
+    "Tags": [
+      "language",
+      "voice",
+      "cutscene",
+      "localization",
+      "lipsync",
+      "LanguageBridge"
+    ],
+    "RepoUrl": "https://github.com/weileliNS/LanguageBridge",
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadLinkInstall": "https://github.com/weileliNS/LanguageBridge/releases/download/v0.2.0/LanguageBridge.zip",
+    "DownloadLinkUpdate": "https://github.com/weileliNS/LanguageBridge/releases/download/v0.2.0/LanguageBridge.zip",
+    "DownloadLinkTesting": "https://github.com/weileliNS/LanguageBridge/releases/download/v0.2.0/LanguageBridge.zip",
+    "LastUpdate": 1792679051
   }
 ]

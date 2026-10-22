@@ -10,5 +10,8 @@ foreach ($key in @('DownloadLinkInstall','DownloadLinkUpdate','DownloadLinkTesti
 }
 $manifest | Add-Member -NotePropertyName LastUpdate -NotePropertyValue ([DateTimeOffset]::UtcNow.ToUnixTimeSeconds()) -Force
 $manifest | Add-Member -NotePropertyName IconUrl -NotePropertyValue 'https://raw.githubusercontent.com/weileliNS/Accountant/main/images/icon.png' -Force
-$json = ConvertTo-Json -InputObject @($manifest) -Depth 20
-[IO.File]::WriteAllText((Join-Path $PSScriptRoot 'repo.json'), $json, [Text.UTF8Encoding]::new($false))
+$indexPath = Join-Path $PSScriptRoot 'repo.json'
+$plugins = @(Get-Content -LiteralPath $indexPath -Raw | ConvertFrom-Json)
+$plugins = @($plugins | Where-Object { $_.InternalName -ne $manifest.InternalName }) + @($manifest)
+$json = ConvertTo-Json -InputObject $plugins -Depth 20
+[IO.File]::WriteAllText($indexPath, $json, [Text.UTF8Encoding]::new($false))

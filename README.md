@@ -6,7 +6,7 @@
 https://raw.githubusercontent.com/weileliNS/DalamudPlugins/main/repo.json
 ```
 
-当前维护 [Accountant CN](https://github.com/weileliNS/Accountant)。索引只在 release 资产确实发布后更新，不发布占位或失效下载链接。
+当前维护 [Accountant CN](https://github.com/weileliNS/Accountant) 和 [Language Bridge](https://github.com/weileliNS/LanguageBridge)。索引只在 release 资产确实发布后更新，不发布占位或失效下载链接。
 
 如果当前游戏进程已经加载过 1.8.3.5 旧索引，普通刷新可能命中框架的三小时内存缓存。可以把仓库地址改为 `https://raw.githubusercontent.com/weileliNS/DalamudPlugins/main/repo.json?channel=cn`，保存后刷新列表。此地址仍随仓库发布更新。
 
