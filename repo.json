@@ -88,5 +88,31 @@
     "DownloadLinkInstall": "https://github.com/weileliNS/PlayerTagsPlus/releases/download/v1.13.0.2/latest.zip",
     "DownloadLinkUpdate": "https://github.com/weileliNS/PlayerTagsPlus/releases/download/v1.13.0.2/latest.zip",
     "DownloadLinkTesting": "https://github.com/weileliNS/PlayerTagsPlus/releases/download/v1.13.0.2/latest.zip"
+  },
+  {
+    "Author": "daemitus, croizat, weileliNS",
+    "Name": "YesAlready CN",
+    "InternalName": "YesAlreadyCN",
+    "AssemblyVersion": "1.15.7.9",
+    "Description": "基于 YesAlready，补充简繁中文收藏品识别及主要操作中文标签，保留收藏价值门槛。先停用原版，再启用此版。 / YesAlready with Chinese collectable recognition and selected Chinese UI labels. Keeps collectability checks. Disable the original plugin first.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/weileliNS/YesAlreadyCN",
+    "Tags": [
+      "YesAlreadyCN",
+      "Chinese",
+      "UI"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://s3.puni.sh/media/plugin/26/icon-v1pvonkr6r.png",
+    "Punchline": "自动确认弹窗，补齐中文收藏品识别 / Chinese collectable support",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/weileliNS/YesAlreadyCN/releases/download/v1.15.7.9/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/weileliNS/YesAlreadyCN/releases/download/v1.15.7.9/latest.zip",
+    "DownloadLinkTesting": "https://github.com/weileliNS/YesAlreadyCN/releases/download/v1.15.7.9/latest.zip",
+    "LastUpdate": 1794341863
   }
 ]
